@@ -1,0 +1,83 @@
+<div class="box">
+    <div class="row calculateSection" ng-hide="is_simpleplan" >
+
+        <div class="col-sm-12" style="margin-bottom:20px;">
+            <span class="title"><strong>ENTER YOUR SHIFT TIMES</strong></span>
+
+        </div>
+
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Shift Opened Time</label>
+                <div class="col-sm-5">
+                    <input type="number" name="opend_time" min="0" class="form-control" placeholder="#" ng-model="shift.SD_Shift_Opened_Time" ng-change="updateField()">
+                </div>
+         
+
+            </div>
+        </div>
+
+        <div class="col-sm-12" style="margin-top:10px;">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Shift Closed Time</label>
+                <div class="col-sm-5">
+                    <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.SD_Shift_Close_Time" ng-change="updateField()">
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <i class="text-muted">** In military format from the Register Shift Report </i>
+        </div>
+
+    </div>
+
+
+    <br /><br />
+
+    <label>DUTIES & RESPONSIBILITIES - Please confirm you have completed every task below:</label>
+
+    <br />
+    <div class="row billsSection" style="margin-top:10px;">
+
+       
+        <!-- new stuff  dynamic checklist -->       
+      
+        <div class="col-sm-12" ng-repeat="data in shift.SD_checklist |orderBy:'cat_id' | unique: 'cat_id'">
+            <label>{{data.cat_text}}</label>
+            <ul class="list-group">
+
+                    <li class="list-group-item" style="border: 1px solid #3388cc;" ng-repeat="checklist in shift.SD_checklist | orderBy:'+checklist.q_type'" ng-if="(checklist.cat_id == data.cat_id && checklist.shift_no == shift.shiftNO) " > <!--q_304 skip note for manager-->
+                            <div ng-if="checklist.q_type.toLowerCase() == 'checkbox'">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" ng-model="checklist.q_answer" ng-click="updateField()">{{checklist.question_text}} <i class="hide">{{checklist.q_answer}}</i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div ng-if="checklist.q_type.toLowerCase() == 'textbox'">
+                                <textarea style="width:100%" placeholder="{{checklist.question_text}}" ng-model="checklist.q_answer" ng-change="updateField()"></textarea>
+                            </div>
+                   </li>
+            </ul>
+
+        </div>
+		<div ng-show="is_simpleplan">
+			<!-- submit button -->
+
+			<button type="button" class="btn btn-primary btn-sm center-block" style="width:250px;margin-top:50px;" ng-click="submit()">
+				<span class="glyphicon glyphicon-ok pull-left"></span>
+				<strong> Approve and Submit Shift Report</strong>
+			</button>
+
+		</div>  
+
+
+
+</div>
+
+
+
+
+
+</div><!-- box -->

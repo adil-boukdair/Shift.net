@@ -1,0 +1,298 @@
+{
+  "rackse": {
+    "store_racks": [
+      {
+        "id": 2,
+        "title": "Food Rackset 31",
+        "header": {
+          "Sections": [
+            {
+              "id": 10,
+              "Title": "TSection 11",
+              "elemnts": [
+                {
+                  "id": 22,
+                  "title": "T element 11",
+                  "def": "",
+                  "val": null,
+                  "uuid": null
+                }
+              ],
+              "show_border": false
+            }
+          ]
+        },
+        "rack": [
+          {
+            "rack_name": "Rack 1",
+            "rack_no": 1,
+            "rack_row": 0,
+            "rack_col": 8,
+            "show_started": true,
+            "show_added": true,
+            "show_ended": true,
+            "id": 0,
+            "show_product_label": false,
+            "added_val": null,
+            "started_val": null,
+            "ended_val": null,
+            "product_label": [ ]
+          }
+        ],
+        "footer": {
+          "Sections": [
+            {
+              "id": 0,
+              "Title": "B Section 1",
+              "elemnts": [
+                {
+                  "id": 23,
+                  "title": "B element 11",
+                  "def": "",
+                  "val": null,
+                  "uuid": null
+                }
+              ],
+              "show_border": false
+            }
+          ]
+        },
+        "show_boarder": false
+      },
+      {
+        "id": 3,
+        "title": "Coke Rackset",
+        "header": {
+          "Sections": [
+            {
+              "id": 12,
+              "Title": "Coke T Section 1",
+              "elemnts": [
+                {
+                  "id": 24,
+                  "title": "coke T Element 1",
+                  "def": "",
+                  "val": null,
+                  "uuid": null
+                }
+              ],
+              "show_border": false
+            }
+          ]
+        },
+        "rack": [
+          {
+            "rack_name": "Coke Rack one",
+            "rack_no": 1,
+            "rack_row": 0,
+            "rack_col": 8,
+            "show_started": true,
+            "show_added": true,
+            "show_ended": true,
+            "id": 0,
+            "show_product_label": false,
+            "added_val": null,
+            "started_val": null,
+            "ended_val": null,
+            "product_label": [
+              {
+                "row_no": 0,
+                "col_no": 0,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 0,
+                "col_no": 1,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 0,
+                "col_no": 2,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 0,
+                "col_no": 3,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 0,
+                "col_no": 4,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 0,
+                "col_no": 5,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 0,
+                "col_no": 6,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 0,
+                "col_no": 7,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 0,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 1,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 2,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 3,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 4,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 5,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 6,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 1,
+                "col_no": 7,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 0,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 1,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 2,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 3,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 4,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 5,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 6,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 2,
+                "col_no": 7,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 0,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 1,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 2,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 3,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 4,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 5,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 6,
+                "product_name": "Twix"
+              },
+              {
+                "row_no": 3,
+                "col_no": 7,
+                "product_name": "Twix"
+              }
+            ]
+          },
+          {
+            "rack_name": "Coke Rack Two",
+            "rack_no": 2,
+            "rack_row": 0,
+            "rack_col": 8,
+            "show_started": true,
+            "show_added": true,
+            "show_ended": true,
+            "id": 0,
+            "show_product_label": false,
+            "added_val": null,
+            "started_val": null,
+            "ended_val": null,
+            "product_label": [ ]
+          }
+        ],
+        "footer": {
+          "Sections": [
+            {
+              "id": 0,
+              "Title": "Coke B Section 1",
+              "elemnts": [
+                {
+                  "id": 25,
+                  "title": "Coke B element 1",
+                  "def": "",
+                  "val": null,
+                  "uuid": null
+                }
+              ],
+              "show_border": false
+            }
+          ]
+        },
+        "show_boarder": false
+      }
+    ]
+  }
+}

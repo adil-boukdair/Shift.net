@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^G:\\Users\\Adil\\Documents\\Projects\\VenueCash\\ShiftReportBackend\\Solution1\\ShiftreportsAPI_prod\\obj\\Debug\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^G:\\Users\\Adil\\Documents\\Projects\\VenueCash\\ShiftReportBackend\\Solution1\\ShiftreportsAPI_prod\\obj\\Debug\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=srdb.shiftreports.com;Initial Catalog=shiftreports_admin;Persist Security Info=True;User ID=shiftreports;Password=srdb123456#;Connect Timeout=10000" tags="">
+    <parameterEntry kind="XmlFile" scope="G:\\Users\\Adil\\Documents\\Projects\\VenueCash\\ShiftReportBackend\\Solution1\\ShiftreportsAPI_prod\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="shiftreport-Web.config Connection String" description="" value="Data Source=srdb.shiftreports.com;Initial Catalog=sr_prod;Persist Security Info=True;User ID=shiftreports;Password=srdb123456#;Connect Timeout=10000" tags="">
+    <parameterEntry kind="XmlFile" scope="G:\\Users\\Adil\\Documents\\Projects\\VenueCash\\ShiftReportBackend\\Solution1\\ShiftreportsAPI_prod\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='shiftreport']/@connectionString" />
+  </parameter>
+  <parameter name="ShiftreportLib.DashboardContext-Web.config Connection String" description="" value="ShiftreportLib.DashboardContext_ConnectionString" tags="">
+    <parameterEntry kind="XmlFile" scope="G:\\Users\\Adil\\Documents\\Projects\\VenueCash\\ShiftReportBackend\\Solution1\\ShiftreportsAPI_prod\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ShiftreportLib.DashboardContext']/@connectionString" />
+  </parameter>
+</parameters>

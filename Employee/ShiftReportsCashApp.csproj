@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{190C7516-5817-4A0E-B74B-5B313764B367}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShiftReportsCashApp</RootNamespace>
+    <AssemblyName>ShiftReportsCashApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="dist_to_delete\css\AdminLTE.css" />
+    <Content Include="dist_to_delete\css\AdminLTE.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-black-light.css" />
+    <Content Include="dist_to_delete\css\skins\skin-black-light.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-black.css" />
+    <Content Include="dist_to_delete\css\skins\skin-black.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-blue-light.css" />
+    <Content Include="dist_to_delete\css\skins\skin-blue-light.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-blue.css" />
+    <Content Include="dist_to_delete\css\skins\skin-blue.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-green-light.css" />
+    <Content Include="dist_to_delete\css\skins\skin-green-light.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-green.css" />
+    <Content Include="dist_to_delete\css\skins\skin-green.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-purple-light.css" />
+    <Content Include="dist_to_delete\css\skins\skin-purple-light.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-purple.css" />
+    <Content Include="dist_to_delete\css\skins\skin-purple.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-red-light.css" />
+    <Content Include="dist_to_delete\css\skins\skin-red-light.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-red.css" />
+    <Content Include="dist_to_delete\css\skins\skin-red.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-yellow-light.css" />
+    <Content Include="dist_to_delete\css\skins\skin-yellow-light.min.css" />
+    <Content Include="dist_to_delete\css\skins\skin-yellow.css" />
+    <Content Include="dist_to_delete\css\skins\skin-yellow.min.css" />
+    <Content Include="dist_to_delete\css\skins\_all-skins.css" />
+    <Content Include="dist_to_delete\css\skins\_all-skins.min.css" />
+    <Content Include="dist_to_delete\js\app.js" />
+    <Content Include="dist_to_delete\js\app.min.js" />
+    <Content Include="dist_to_delete\js\demo.js" />
+    <Content Include="dist_to_delete\js\jquery.alphanum.js" />
+    <Content Include="dist_to_delete\js\Manager.js" />
+    <Content Include="dist_to_delete\js\moment-range.min.js" />
+    <Content Include="dist_to_delete\js\moment.js" />
+    <Content Include="dist_to_delete\js\pages\dashboard.js" />
+    <Content Include="dist_to_delete\js\pages\dashboard2.js" />
+    <Content Include="images\icons\close-drawer.png" />
+    <Content Include="images\icons\open-drawer.png" />
+    <Content Include="images\icons\safe-drops.png" />
+    <Content Include="images\icons\sales-info.png" />
+    <Content Include="images\logo-mini.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\mini_log_v5.png" />
+    <Content Include="images\sr_logo_v5.0.png" />
+    <Content Include="images\videotut\checklist\1.png" />
+    <Content Include="images\videotut\checklist\2.png" />
+    <Content Include="images\videotut\checklist\3.png" />
+    <Content Include="images\videotut\checklist\4.png" />
+    <Content Include="images\videotut\drawer\1.png" />
+    <Content Include="images\videotut\drawer\2.png" />
+    <Content Include="images\videotut\drawer\3.png" />
+    <Content Include="images\videotut\drawer\4.png" />
+    <Content Include="images\videotut\safedrops\1.png" />
+    <Content Include="images\videotut\safedrops\2.png" />
+    <Content Include="images\videotut\safedrops\3.png" />
+    <Content Include="images\videotut\safedrops\4.png" />
+    <Content Include="images\videotut\summary\1.png" />
+    <Content Include="images\videotut\summary\2.png" />
+    <Content Include="images\videotut\summary\3.png" />
+    <Content Include="images\videotut\summary\4.png" />
+    <Content Include="images\videotut\summary\5.png" />
+    <Content Include="images\videotut\summary\6.png" />
+    <Content Include="images\videotut\summary\7.png" />
+    <Content Include="images\videotut\summary\8.png" />
+    <Content Include="images\videotut\summary\9.png" />
+    <Content Include="index.html" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\controllers\Racks.js" />
+    <Content Include="scripts\controllers\Schedule.js" />
+    <Content Include="scripts\controllers\ForgotPassword.js" />
+    <Content Include="scripts\controllers\tutorial.js" />
+    <Content Include="scripts\vendor\angular-bootstrap-calendar-tpls.js" />
+    <Content Include="scripts\vendor\angular\angular-resource.js" />
+    <Content Include="scripts\vendor\adminLTE.js" />
+    <Content Include="scripts\vendor\jquery.alphanum.js" />
+    <Content Include="scripts\vendor\moment\moment-range.min.js" />
+    <Content Include="scripts\vendor\moment\moment.js" />
+    <Content Include="scripts\vendor\pace.js" />
+    <Content Include="styles\css\AdminLTE.css" />
+    <Content Include="styles\css\bootstrap-theme.css.map" />
+    <Content Include="styles\css\bootstrap-theme.min.css.map" />
+    <Content Include="styles\css\bootstrap.css.map" />
+    <Content Include="styles\css\bootstrap.min.css.map" />
+    <Content Include="styles\css\font-awesome.min.css" />
+    <Content Include="styles\css\pace-themes\pace-theme-corner-indicator.css" />
+    <Content Include="styles\css\skins\_all-skins.min.css" />
+    <Content Include="styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="styles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="styles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="styles\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="styles\fonts\fontawesome-webfont.eot" />
+    <Content Include="styles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="styles\fonts\fontawesome-webfont.woff2" />
+    <Content Include="styles\fonts\FontAwesome.otf" />
+    <Content Include="submitRequest.json" />
+    <Content Include="submitRequest-cash-app.json" />
+    <Content Include="jsons\racksets.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\app.js" />
+    <Content Include="scripts\controllers\CloseDrawer.js" />
+    <Content Include="scripts\controllers\CreateShift.js" />
+    <Content Include="scripts\controllers\Login.js" />
+    <Content Include="scripts\controllers\LoginSignUp.js" />
+    <Content Include="scripts\controllers\OpenDrawer.js" />
+    <Content Include="scripts\controllers\ReviewSubmit.js" />
+    <Content Include="scripts\controllers\SafeDrops.js" />
+    <Content Include="scripts\controllers\SalesInfo.js" />
+    <Content Include="scripts\controllers\ShiftDetails.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\vendor\angular\angular-cookies.js" />
+    <Content Include="scripts\vendor\angular\angular-html5-storage.js" />
+    <Content Include="scripts\vendor\angular\angular-local-storage.js" />
+    <Content Include="scripts\vendor\angular\angular-post-fix.js" />
+    <Content Include="scripts\vendor\angular\angular-route.min.js" />
+    <Content Include="scripts\vendor\angular\angular.min.js" />
+    <Content Include="scripts\vendor\angular\ngStorage.js" />
+    <Content Include="scripts\vendor\angular\q.js" />
+    <Content Include="scripts\vendor\bootstrap.min.js" />
+    <Content Include="scripts\vendor\jquery.min.js" />
+    <Content Include="scripts\vendor\jquery.sidr.min.js" />
+    <Content Include="scripts\vendor\persistence\gears_init.js" />
+    <Content Include="scripts\vendor\persistence\persistence.js" />
+    <Content Include="scripts\vendor\persistence\persistence.store.memory.js" />
+    <Content Include="scripts\vendor\persistence\persistence.store.sql.js" />
+    <Content Include="scripts\vendor\persistence\persistence.store.websql.js" />
+    <Content Include="styles\css\bootstrap-theme.css" />
+    <Content Include="styles\css\bootstrap-theme.min.css" />
+    <Content Include="styles\css\bootstrap.css" />
+    <Content Include="styles\css\bootstrap.min.css" />
+    <Content Include="styles\css\jquery.sidr.dark.css" />
+    <Content Include="styles\css\main.css" />
+    <Content Include="styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="views\racks\rack.html" />
+    <Content Include="views\scheduler\calendar-week-view.html" />
+    <Content Include="views\scheduler\schedule.html" />
+    <Content Include="views\tutorials\4.html" />
+    <Content Include="views\tutorials\3.html" />
+    <Content Include="views\tutorials\2.html" />
+    <Content Include="views\tutorials\1.html" />
+    <Content Include="views\tutorials\layout.html" />
+    <Content Include="views\close_drawer.html" />
+    <Content Include="views\create_shift.html" />
+    <Content Include="views\forgot-password.html" />
+    <Content Include="views\login.html" />
+    <Content Include="views\login_signup.html" />
+    <Content Include="views\open_drawer.html" />
+    <Content Include="views\review_submit.html" />
+    <Content Include="views\safe_drops.html" />
+    <Content Include="views\sales_info.html" />
+    <Content Include="views\shift_details.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="plugins\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59312</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59312/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

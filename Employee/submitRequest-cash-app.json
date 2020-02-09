@@ -1,0 +1,1402 @@
+[
+  {
+    "shift_info": [
+      {
+        "shift_id": 84,
+        "cashier_id": 54,
+        "shift_no": 1,
+        "shift_opened": 0,
+        "shift_closed": 0
+      }
+    ],
+    "drawer_open_mst": [
+      {
+        "fifties": 0,
+        "twenties": 0,
+        "tens": 0,
+        "fives": 0,
+        "singles": 0,
+        "dollars": 0,
+        "quarters": 0,
+        "dimes": 0,
+        "nickels": 0,
+        "pennies": 0,
+        "rolled_quarters": 0,
+        "rolled_dimes": 0,
+        "rolled_nickels": 0,
+        "rolled_pennies": 0
+      }
+    ],
+    "drawer_close_mst": [
+      {
+        "fifties": 0,
+        "twenties": 0,
+        "tens": 0,
+        "fives": 0,
+        "singles": 0,
+        "dollars": 0,
+        "quarters": 0,
+        "dimes": 0,
+        "nickels": 0,
+        "pennies": 0,
+        "rolled_quarters": 0,
+        "rolled_dimes": 0,
+        "rolled_nickels": 0,
+        "rolled_pennies": 0
+      }
+    ],
+    "safe_drops": [ ],
+    "shift_details_mst": { "shift_session_ended": "1349" },
+    "mop_sales": [
+      {
+        "_id": 1,
+        "label": "REGISTER 1",
+        "credit": "0.00",
+        "debit": "0.00",
+        "cash": "0.00"
+      },
+      {
+        "_id": 2,
+        "label": "REGISTER 2",
+        "credit": "0.00",
+        "debit": "0.00",
+        "cash": "0.00"
+      },
+      {
+        "_id": 0,
+        "label": "ALL REGISTERS",
+        "credit": "0.00",
+        "debit": "0.00",
+        "cash": "0.00"
+      }
+    ],
+    "shift_checklist_mst": [
+      {
+        "q_id": 1432,
+        "q_type": "checkbox",
+        "q_uuid": "q_1",
+        "q_answer": false
+      },
+      {
+        "q_id": 1441,
+        "q_type": "checkbox",
+        "q_uuid": "q_10",
+        "q_answer": false
+      },
+      {
+        "q_id": 1442,
+        "q_type": "checkbox",
+        "q_uuid": "q_11",
+        "q_answer": false
+      },
+      {
+        "q_id": 1443,
+        "q_type": "checkbox",
+        "q_uuid": "q_13",
+        "q_answer": false
+      },
+      {
+        "q_id": 1444,
+        "q_type": "checkbox",
+        "q_uuid": "q_14",
+        "q_answer": false
+      },
+      {
+        "q_id": 1445,
+        "q_type": "checkbox",
+        "q_uuid": "q_15",
+        "q_answer": false
+      },
+      {
+        "q_id": 1446,
+        "q_type": "checkbox",
+        "q_uuid": "q_16",
+        "q_answer": false
+      },
+      {
+        "q_id": 1447,
+        "q_type": "checkbox",
+        "q_uuid": "q_17",
+        "q_answer": false
+      },
+      {
+        "q_id": 1448,
+        "q_type": "checkbox",
+        "q_uuid": "q_18",
+        "q_answer": false
+      },
+      {
+        "q_id": 1449,
+        "q_type": "checkbox",
+        "q_uuid": "q_19",
+        "q_answer": false
+      },
+      {
+        "q_id": 1433,
+        "q_type": "checkbox",
+        "q_uuid": "q_2",
+        "q_answer": false
+      },
+      {
+        "q_id": 1450,
+        "q_type": "checkbox",
+        "q_uuid": "q_20",
+        "q_answer": false
+      },
+      {
+        "q_id": 1451,
+        "q_type": "checkbox",
+        "q_uuid": "q_21",
+        "q_answer": false
+      },
+      {
+        "q_id": 1452,
+        "q_type": "checkbox",
+        "q_uuid": "q_22",
+        "q_answer": false
+      },
+      {
+        "q_id": 1453,
+        "q_type": "checkbox",
+        "q_uuid": "q_23",
+        "q_answer": false
+      },
+      {
+        "q_id": 1454,
+        "q_type": "checkbox",
+        "q_uuid": "q_24",
+        "q_answer": false
+      },
+      {
+        "q_id": 1455,
+        "q_type": "checkbox",
+        "q_uuid": "q_25",
+        "q_answer": false
+      },
+      {
+        "q_id": 1456,
+        "q_type": "checkbox",
+        "q_uuid": "q_26",
+        "q_answer": false
+      },
+      {
+        "q_id": 1457,
+        "q_type": "checkbox",
+        "q_uuid": "q_27",
+        "q_answer": false
+      },
+      {
+        "q_id": 1458,
+        "q_type": "checkbox",
+        "q_uuid": "q_28",
+        "q_answer": false
+      },
+      {
+        "q_id": 1459,
+        "q_type": "textbox",
+        "q_uuid": "q_29",
+        "q_answer": ""
+      },
+      {
+        "q_id": 1434,
+        "q_type": "checkbox",
+        "q_uuid": "q_3",
+        "q_answer": false
+      },
+      {
+        "q_id": 1460,
+        "q_type": "textbox",
+        "q_uuid": "q_30",
+        "q_answer": ""
+      },
+      {
+        "q_id": 1435,
+        "q_type": "checkbox",
+        "q_uuid": "q_4",
+        "q_answer": false
+      },
+      {
+        "q_id": 1436,
+        "q_type": "checkbox",
+        "q_uuid": "q_5",
+        "q_answer": false
+      },
+      {
+        "q_id": 1437,
+        "q_type": "checkbox",
+        "q_uuid": "q_6",
+        "q_answer": false
+      },
+      {
+        "q_id": 1438,
+        "q_type": "checkbox",
+        "q_uuid": "q_7",
+        "q_answer": false
+      },
+      {
+        "q_id": 1439,
+        "q_type": "checkbox",
+        "q_uuid": "q_8",
+        "q_answer": false
+      },
+      {
+        "q_id": 1440,
+        "q_type": "checkbox",
+        "q_uuid": "q_9",
+        "q_answer": false
+      }
+    ],
+    "rackset_col": [
+      {
+        "racks_vals": [
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": "ab"
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": "b"
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": "c"
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": "d"
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": "e"
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": "ec"
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": "a"
+          }
+        ],
+        "shift_racks": [
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 0,
+            "added_val": 2,
+            "started_val": 1,
+            "ended_val": 3
+          },
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 1,
+            "added_val": 5,
+            "started_val": 4,
+            "ended_val": 6
+          },
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 2,
+            "added_val": 8,
+            "started_val": 7,
+            "ended_val": 9
+          },
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 3,
+            "added_val": 11,
+            "started_val": 10,
+            "ended_val": 12
+          },
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 4,
+            "added_val": 14,
+            "started_val": 13,
+            "ended_val": 15
+          },
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 5,
+            "added_val": 17,
+            "started_val": 16,
+            "ended_val": 18
+          },
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 6,
+            "added_val": 20,
+            "started_val": 19,
+            "ended_val": 21
+          },
+          {
+            "rack_no": "1",
+            "row_no": 0,
+            "col_no": 7,
+            "added_val": 23,
+            "started_val": 22,
+            "ended_val": 24
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 0,
+            "added_val": 26,
+            "started_val": 25,
+            "ended_val": 27
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 1,
+            "added_val": 29,
+            "started_val": 28,
+            "ended_val": 30
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 2,
+            "added_val": 32,
+            "started_val": 31,
+            "ended_val": 33
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 3,
+            "added_val": 35,
+            "started_val": 34,
+            "ended_val": 36
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 4,
+            "added_val": 38,
+            "started_val": 37,
+            "ended_val": 39
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 5,
+            "added_val": 41,
+            "started_val": 40,
+            "ended_val": 42
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 6,
+            "added_val": 44,
+            "started_val": 43,
+            "ended_val": 45
+          },
+          {
+            "rack_no": "1",
+            "row_no": 1,
+            "col_no": 7,
+            "added_val": 47,
+            "started_val": 46,
+            "ended_val": 48
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 2,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "1",
+            "row_no": 3,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 0,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 1,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 2,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "2",
+            "row_no": 3,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          }
+        ],
+        "rackset_id": 1
+      },
+      {
+        "racks_vals": [
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          }
+        ],
+        "shift_racks": [
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          }
+        ],
+        "rackset_id": 2
+      },
+      {
+        "racks_vals": [
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          },
+          {
+            "elem_id": "the id of the lem in the table",
+            "elem_uuid": "the uuid of the elemnt",
+            "value": ""
+          }
+        ],
+        "shift_racks": [
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 0,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 1,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 2,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 0,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 1,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 2,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 3,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 4,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 5,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 6,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          },
+          {
+            "rack_no": "The rack no",
+            "row_no": 3,
+            "col_no": 7,
+            "added_val": "",
+            "started_val": "",
+            "ended_val": ""
+          }
+        ],
+        "rackset_id": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,507 @@
+﻿ 
+body.slide-active {
+    overflow-x: hidden
+}
+ 
+.no-margin-top {
+    margin-top: 0px!important
+}
+ 
+#page-content {
+    position: relative;
+    padding-top: 70px;
+    left: 0;
+}
+#page-content.slide-active {
+    padding-top: 0
+}
+
+
+
+ 
+#slide-nav .navbar-toggle {
+    cursor: pointer;
+    position: relative;
+    line-height: 0;
+    float: left;
+    margin: 0;
+    width: 30px;
+    height: 40px;
+    padding: 10px 0 0 0;
+    border: 0;
+    background: transparent;
+}
+ 
+#slide-nav .navbar-toggle > .icon-bar {
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px 0 0 0;
+    background: #6bb2ff;
+    
+}
+#slide-nav .navbar-toggle.slide-active .icon-bar {
+   background: #576b89;
+}
+.navbar-header {
+    position: relative
+}
+ 
+.navbar.navbar-fixed-top.slide-active {
+    position: relative
+}
+
+/*  Smart phones */
+@media (max-width:767px) { 
+
+    .navbar-inverse {
+     background-color: #FFFFFF;  
+     border-color: #FFFFFF; 
+        }
+
+	#slide-nav .container {
+	    margin: 0!important;
+	    padding: 0!important;
+      height:100%;tab-button-lg
+	}
+	#slide-nav .navbar-header {
+	    margin: 0 auto;
+	    padding: 0 15px;
+	}
+	#slide-nav .navbar.slide-active {
+	    position: absolute;
+	    width: 80%;
+	    top: -1px;
+	    z-index: 1000;
+	}
+	#slide-nav #slidemenu {
+	    background: #f7f7f7;
+	    left: -100%;
+	    width: 60%; /* reduce sidebar width*/
+	    min-width: 0;
+	    position: absolute;
+	    padding-left: 0;
+	    z-index: 300;
+	    top: -8px;
+	    margin: 0;
+	}
+	#slide-nav #slidemenu .navbar-nav {
+	    min-width: 0;
+	    width: 100%;
+	    margin: 0;
+	}
+	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+	    min-width: 0;
+	    width: 80%;
+	    white-space: normal;
+	}
+	#slide-nav {
+	    border-top: 0
+	}
+	#slide-nav.navbar-inverse #slidemenu {
+	    background: #333
+	}
+	 
+	#navbar-height-col {
+	    position: fixed;
+	    top: 0;
+	    height: 100%;
+      bottom:0;
+	    width: 60%; /* reduce sidebar width */
+	    left: -80%;
+	    background: #f7f7f7;
+	}
+	#navbar-height-col.inverse {
+	    background: #333;
+	    z-index: 1;
+	    border: 0;
+	}
+	#slide-nav .navbar-form {
+	    width: 100%;
+	    margin: 8px 0;
+	    text-align: center;
+	    overflow: hidden;
+	     
+	}
+	#slide-nav .navbar-form .form-control {
+	    text-align: center
+	}
+	#slide-nav .navbar-form .btn {
+	    width: 100%
+	}
+     
+    .tabLogo{
+       
+        display:none;
+    }
+    .leftCorner{
+         height:50px;
+    }
+
+
+
+    /* Tab buttons */
+   
+.tab-button-lg{
+   
+    border-color: #3388cc;
+    border-style: solid;
+    border-width: thin;
+}
+       
+.tab-button-sm{
+     display:normal;
+     margin-top:10px;
+}
+
+.navbar-fixed-bottom button{
+    margin-top:10px;
+}
+
+.navbar-fixed-bottom-menu {
+    bottom: 0;
+    margin-bottom: 0px;
+    border-width: 1px 0 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+     z-index: 0;  
+}
+
+
+.bottom-footer{
+
+    display:none;
+
+}
+
+}
+
+ /*  Tablet and Desktop */
+@media (min-width:768px) { 
+
+     .navbar-inverse {
+     background-color: #FFFFFF;  
+     border-color: #080808; 
+        }
+
+     .navbar {
+    border: 1px solid transparent;
+}
+
+   
+	#page-content {
+	    left: 0!important
+	}
+	.navbar.navbar-fixed-top.slide-active {
+	    position: fixed
+	}
+	.navbar-header {
+	    left: 0!important
+	}
+
+    /* Tab buttons */
+.tab-button-lg{
+    padding-top:10px;
+    padding-bottom:5px;
+    
+    border-color: #3388cc;
+    border-style: solid;
+    border-width: thin;
+}
+
+.tab-button-sm{
+     display:none;
+}
+
+.navbar-fixed-bottom-menu {
+    bottom: 0;
+    margin-bottom: 0px;
+    border-width: 1px 0 0;
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+ 
+}
+
+/* very small device like iphone 5*/
+@media (max-width:360px) {
+     
+    .btnText{
+        font-size:11px;
+    }
+       .safeDropText{
+         font-size:11px;
+    }
+   
+}
+ 
+ 
+ 
+.headerMenuPadding{
+    padding-left:20px;padding-right:20px;
+
+
+
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #3a7ba0;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+     color: #000000; 
+    background-color: transparent;
+}
+
+.totalCash{
+    color:#37ba15;
+    font-size:18px;
+}
+
+
+.borderless tbody tr td  {
+    border: none;
+}
+
+ .body-section{
+     margin-top:20px;
+     padding-left:22px;
+     padding-right:22px;
+     padding-top:15px;
+     /*border:solid;*/
+     border-width:1px;
+     border-color:#b5a9a9;
+     min-height:400px;
+ }
+
+
+
+/* app colors
+
+    global header:007aff
+    tab:3388cc
+    total green: 37ba15
+
+
+*/
+ 
+
+/* body */
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+/* Logo */
+
+.logo-container{
+    width:150px;
+    margin-left:5px;
+    float:left;
+    margin-top:6px;
+}
+
+.logo-container img{
+    width: 100%;
+    height: auto;
+}
+
+/* billsSection */
+.billsSection {
+     margin-bottom:50px;
+}
+
+.billsSection ht{
+
+    color:rgb(166, 77, 89) !important;
+   
+       
+}
+
+
+/* Override*/
+
+.navbarTop {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 26px; 
+    border: 1px solid transparent;
+}
+
+/* Seconde menu */
+.navbar-bottom-menu {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container {
+padding-top: 70px;
+}
+
+/* fixed menu footer */
+ .fixed-menu-footer {
+   background-color:#FFFFFF;
+}
+ 
+
+ /* bottom footer */
+
+.bottom-footer{
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    }
+.footer-btns{
+    width:60%;
+    margin-bottom:10px;
+
+}
+
+#bottom-menu a{
+
+   color:#6bb2ff
+}
+#top-menu a{
+
+   color:#6bb2ff
+}
+
+/* main container */
+
+.main-container{
+
+    margin-bottom:30px;
+}
+
+/* adapt font awesome icons to buttons */
+ 
+.adp-fa{
+    margin-top: -5px;
+}
+
+.centerd-controlle{ /* centred controlles input box and buttons*/
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+/* ################# New menu   #################*/
+.menu-button-container a.btn-default.active{background-color:#007ba7;color:#FFF}
+.menu-button-container a.btn-default{width:100%;border:2px solid #007ba7;margin:0; box-shadow:0px 4px 4px 0 #ccc;border-radius: 0;}
+.menu-button-container a.middle { border-left:1px;border-right:1px;}
+.menu-button-container a .bizcontent{width:100%;}
+.menu-button-container .btn-group{width:100%}
+.menu-button-container .btn span{
+    opacity: 1;
+    color:#007ba7;
+}
+.menu-button-container .btn.active span {
+    opacity: 1;
+    color:#FFFFFF;
+}
+.bizcontent .btnText{
+
+   color:#007ba7;
+}
+.menu-button-container .btn.active .bizcontent .btnText {
+    color:#FFFFFF;
+
+}
+/* ################################################### */
+
+/* ##################### container box #################*/
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    display: block;
+    margin-top: 5px;
+    min-height: 450px;  
+    margin-bottom:0px;
+} 
+
+/* ####################  Material design checkbox ############*/
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+
+/*#####################*/
+.review-submit-section{
+    border: 1px solid rgb(166, 77, 89) !important;
+    padding-left: 39px;
+    padding-right: 39px;
+    border-radius: 7px;
+    padding-top: 3px;
+}
+
+/* ####################  Material design checkbox ############*/
+
+/*  ng-cloack */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+
+/* #################### Racks #################################*/
+
+.rack-box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,28 @@
+<div class="box">
+    <div class="row calculateSection">
+
+        <div class="col-sm-12">
+            <h4><strong>Please select a shift you are reporting for:</strong></h4>
+        </div>
+
+    </div>
+
+    <div class="col-sm-12">
+
+ 
+
+        <div class="row" ng-repeat="shift in shiftInfo" style="margin-top:50px;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-5" style="margin-top:20px;">
+                <button type="button" class="btn btn-default btn-sm pull-left" style="width:100%;" ng-click="createShift(shift.shift_no,shift.start_time,shift.end_time)">
+                    <span class="glyphicon glyphicon-time pull-left"></span>
+                    <strong> {{shift.start_time}} - {{shift.end_time}} Shift</strong>
+                </button>
+
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+         
+
+    </div>
+</div><!--box -->

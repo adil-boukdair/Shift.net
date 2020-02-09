@@ -1,0 +1,74 @@
+﻿
+
+<div class="week-scheduler">
+
+    <div class="table-responsive">
+
+    <table class="table-bordered" style="width:100%">
+        <thead> <!-- calendar header -->
+            <tr>
+                <th style="width:10%;height:40px;" class="text-center bg-navy">Shift #: Times</th>
+                <th ng-repeat="day in vm.view.days track by $index"  
+                    ng-class="{
+                    'bg-blue': day.isToday,
+                    'bg-blue-active':!day.isToday,
+                    'bg-blue-active':!day.isWeekend && !day.isToday,
+                    'bg-black-active': day.isWeekend}"
+                    class="text-center">{{day.date | formatdate:"ddd" | uppercase}} {{day.date | formatdate:"DD"}}</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-repeat="shift in vm.shiftsAndEvents track by shift.shift_no" style="height:45px;">
+                <td class="bg-navy text-center" valign="top">
+                    <div class="text-left" style="margin-top:-1px;margin-left: 3px;"><small>{{shift.shift_no}}</small></div>
+                    
+                        <strong><small>{{shift.start_time}} <br /> {{shift.end_time}}</small></strong>
+                    
+                </td>
+             
+                     <td ng-repeat="event in shift.events" valign="top" style="width:12%">
+ 
+                         <div style="background-color:aliceblue;width:96%;height:90px;margin: 2px 2px 2px 2px;">
+
+                             <div ng-if="event.exist==true"  style="height:100%" ng-init="status=event.employees[event.employees.length-1].status" ><!-- event exist -->
+
+                                 <a   style="height:100%;display:block" href="javascript:;" ng-click="vm.calendarCtrl.onEventClick({calendarEvent: event})">
+                                     <div data-toggle="tooltip" data-placement="top" data-html="true" title="{{shift.start_time}} - {{shift.end_time}}</br> {{employee.employee_name}}"
+                                          style="height:100%" class="ellipsis"
+                                          ng-class="{'-1':'bg-red-active','0':'bg-my-yellow','1':'bg-green'}[event.status]"
+                                          >
+                                          <span style="margin-left:2px;" ng-if="event.status==-1">Declined</span>
+                                          <span style="margin-left:2px;" ng-if="event.status==0">Pending</span>
+                                          <span style="margin-left:2px;" ng-if="event.status==1">Accepted</span>
+                                         
+                                     </div>
+                                    
+                                     <div style="width:100%" class="cell-icon">
+                                         <div style="width:100%;position:relative;margin-top:-20px;">
+                                                 <i class="fa fa-pencil pull-right pen-icon"></i>
+                                         </div>
+                                     </div>
+                                 </a>
+                             </div>
+
+
+                             <div ng-if="event.exist==false"  style="height:100%" ><!-- event dont exist -->
+                                 <a class="bg-orange-active" style="height:100%;display:block" href="javascript:;" ng-click="vm.calendarCtrl.onEventClick({calendarEvent: event})">
+                                     <div style="margin-left:2px;padding-top:50px;"></div>
+ 
+                                 </a>
+                             </div>
+                         </div>
+                     </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    </div><!-- table responsive -->
+ 
+</div>
+ 

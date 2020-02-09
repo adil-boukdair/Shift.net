@@ -1,0 +1,162 @@
+<style>
+    @media screen and (orientation:portrait) {
+
+        #dynamicRack{
+        display:none;
+    }
+}
+
+@media screen and (orientation:landscape) {
+        #landscape{
+        display:none;
+    }
+
+}
+
+
+        .headcol {
+            position:absolute; 
+            width:5em; 
+            left:0;
+            top:auto;
+            border-right: 0px none black; 
+            border-top-width:3px; /*only relevant for first row*/
+            margin-top:-3px; /*compensate for top border*/
+        }
+
+
+</style> 
+<div class="box">
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="rackset in racksets" ng-if="rackset.id==rackset_ID">
+            <h2>{{rackset.title}}</h2>
+        </div>
+
+        <div class="col-sm-8">
+            <a ng-if="cashierName==null" href="mobile-cash-business-login" class="btn btn-primary btn-flat pull-right" style="margin-top:10px;">Login</a>
+            <a ng-if="cashierName!=null" ng-click="goBackToTheApp()" class="btn btn-primary btn-flat pull-right" style="margin-top:10px;">Back to the app</a>
+        </div>
+
+    </div>
+    <hr />
+
+    <div class="callout callout-danger" id="landscape">
+        <h4>Alert!</h4>
+        <p>This page can only be displayed in landscape mode, please change the orientation of your device.</p>
+    </div>
+
+    <div class="container-fluid" id="dynamicRack" ng-repeat="rackset in racksets" ng-if="rackset.id==rackset_ID">
+      
+            <section class="section-header col-md-12">
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <!-- tab menu -->
+                        <li class="" ng-class="{0:'active'}[$index]" ng-repeat="section in rackset.header.Sections">
+                            <a href="#header_section_tab_{{$index}}" data-toggle="tab" aria-expanded="true">{{section.Title}}</a>
+                        </li>
+                    </ul>
+                    <!-- tab content -->
+                    <div class="tab-content">
+                        <div class="tab-pane" ng-class="{0:'active'}[$index]" ng-repeat="section in rackset.header.Sections" id="header_section_tab_{{$index}}">
+                            <div>
+                                <input ng-repeat="element in section.elemnts" ng-change="updateRackSetValues()" class="form-control" type="text" style="margin-bottom:2px;" placeholder="{{element.title}}" ng-model="element.def" />
+                            </div>
+
+                        </div><!-- /.tab-pane -->
+
+                    </div><!-- /.tab-content -->
+                </div>
+            </section>
+     
+        <!-- section-body -->
+        <section class="section-body" style="margin-top: 0px;">
+            <div class="row">
+                <div class="navigation col-sm-12 text-center" style="margin-bottom:20px;">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary" ng-click="previousRack()">Previous</button>
+                        <button type="button" class="btn btn-default">{{selectedRack+1}} of {{rackset.rack.length}}</button>
+                        <button type="button" class="btn btn-primary" style="width:77px;" ng-click="nextRack(rackset)">Next</button>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h3>{{rackset.rack[selectedRack].rack_name}}</h3>
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="table-responsive" >
+                    <table class="table table-bordered" style="border:1px;">
+                        <tr class="text-center" ng-if="rackset.rack[selectedRack].show_product_label==false">
+                            <td style="border:0px;" ></td>
+                            <td  ng-repeat="alpha in rackset.rack[selectedRack].cell[0]">{{alphabet[$index]}}</td>
+                        </tr>
+                        <tr ng-repeat="row in rackset.rack[selectedRack].cell">
+                            <td class="headcol"  style="border:0px;">{{$index + 1}}</td>
+                            <td valign="top" ng-repeat="cell in row" class="text-center">
+                                <strong ng-if="rackset.rack[selectedRack].show_product_label==true">{{cell.product_name}}</strong>
+                                <div style="margin-bottom:1px;" ng-if="rackset.rack[selectedRack].show_started==true">
+                                    <input type="number" class="bg-light-blue" style="width:50px;" ng-change="updateRackSetValues()" ng-model="cell.started_val" />
+                                </div>
+                                <div style="margin-bottom:1px;" ng-if="rackset.rack[selectedRack].show_added==true">
+                                    <input type="number" class="bg-green" style="width:50px;" ng-change="updateRackSetValues()" ng-model="cell.added_val" />
+                                </div>
+                                <div style="margin-bottom:1px;" ng-if="rackset.rack[selectedRack].show_ended==true">
+                                    <input type="number" class="bg-orange" style="width:50px;" ng-change="updateRackSetValues()" ng-model="cell.ended_val" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+ 
+
+        </section> <!-- section-body -->
+
+    
+
+        <!-- footer -->
+
+        <section class="section-footer col-md-12">
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                    <!-- tab menu -->
+                    <li class="" ng-class="{0:'active'}[$index]" ng-repeat="section in rackset.footer.Sections">
+                        <a href="#footer_section_tab_{{$index}}" data-toggle="tab" aria-expanded="true">{{section.Title}}</a>
+                    </li>
+                </ul>
+                <!-- tab content -->
+                <div class="tab-content">
+                    <div class="tab-pane" ng-class="{0:'active'}[$index]" ng-repeat="section in rackset.footer.Sections" id="footer_section_tab_{{$index}}">
+                        <div>
+                            <input ng-repeat="element in section.elemnts" ng-change="updateRackSetValues()" class="form-control" type="text" style="margin-bottom:2px;" placeholder="{{element.title}}" ng-model="element.def" />
+                        </div>
+
+                    </div><!-- /.tab-pane -->
+
+                </div><!-- /.tab-content -->
+            </div>
+        </section>
+
+
+        <script>
+                            // jquery for TAbs
+                                $(".nav-tabs").delegate("a", "click", function (e) {
+
+                                e.preventDefault();
+                                $(this).tab('show');
+                            });
+        </script>
+
+    </div>
+
+
+
+
+</div>
+
+
+

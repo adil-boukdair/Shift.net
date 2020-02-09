@@ -1,0 +1,56 @@
+<div class="box">
+    <div class="row calculateSection">
+
+        <div class="row" style="margin-bottom:20px;">
+            <div class="col-sm-12">
+                <span class="title"><strong>SAFE DROPS</strong></span>
+                <span class="totalCash"><strong>{{total | currency}}</strong></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
+                    <label class="control-label">Safe Drop # {{safeDrop._id}}</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control centerd-controlle" placeholder="$0.00" ng-model="safeDrop.value" ng-change="calculate()">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-5" style="margin-top:20px;">
+                <button type="button" class="btn btn-default btn-sm centerd-controlle" ng-click="addSafeDrop()">
+                    <span class="glyphicon glyphicon-plus pull-left"></span>
+                    <strong>Add New Safe Drop</strong>
+                </button>
+            </div>
+        </div>
+ 
+        <br />
+
+        <table class="table">
+            <tr ng-repeat="oneSafeDrop in shift.SD_SafeDrops | orderBy:'+'">
+                <td style="width:35%;">
+                    <label class="control-label pull-right">
+                        <small class="safeDropText">Safe Drop #</small> {{oneSafeDrop._id}}
+                    </label>
+                </td>
+                <td style="width:40%;"><input type="text" class="form-control " value="{{oneSafeDrop.value}}" ng-model="oneSafeDrop.value" ng-change="updateField();"></td>
+                <td>
+                    <button type="button" class="btn btn-danger btn-sm pull-left" style="margin-top:2px;" ng-click="removeFromSafeDrop(oneSafeDrop._id)">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </td>
+            </tr>
+
+
+        </table>
+
+
+    </div>
+
+</div> <!-- box -->

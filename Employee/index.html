@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html ng-app="ShiftReportsApp">
+  <head>
+      <!--base href="/employees/" /-->
+  	<base href="/" />
+  	<!--base href="/" /-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ShiftReports | Cash APP</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="styles/css/AdminLTE.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="styles/css/skins/_all-skins.min.css">
+
+      <link href="styles/css/main.css" rel="stylesheet">
+ 
+
+      <script data-pace-options='{ "ajax": true }' src="scripts/vendor/pace.js"></script>
+      <link rel="stylesheet" href="styles/css/pace-themes/pace-theme-corner-indicator.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="hold-transition skin-yellow sidebar-mini sidebar-collapse ">
+    <div class="wrapper" >
+
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="javascript:;" class="logo" target="_blank" style="background-color:#FFFFFF;"  >
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><img src="images/logo-mini.png" style="width:50px;" /></span>
+          <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg" style="background-color:#FFFFFF;"><b><img src="images/logo.png" style="width:180px;" /></b></span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+
+
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a> 
+
+
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav my-menu pull-left">
+
+
+                <li class="dropdown tasks-menu">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                       Tutorials <i class="fa fa-question-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu" >
+                        <li>
+                            <!-- contains the actual data -->
+                            <ul class="menu">
+                                <li ng-show="showAppSummary">
+                                    <a href="tutorial/1" >
+                                        <h3 class="ng-binding">
+                                            App Summary
+                                            <i class="pull-right">
+                                                <i class="fa fa-video-camera"></i>
+                                                <span class="label label-info"></span>
+                                            </i>
+                                        </h3>
+                                    </a>
+                                </li> 
+                                <li ng-show="showCashDrawer">
+                                    <a href="tutorial/2">
+                                        <h3 class="ng-binding">
+                                            Cash Drawers
+                                            <i class="pull-right">
+                                                <i class="fa fa-video-camera"></i>
+                                                <span class="label label-info"></span>
+                                            </i>
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li ng-show="showreviewandsubmit">
+                                    <a href="tutorial/3">
+                                        <h3 class="ng-binding">
+                                            Checklists,review and submit
+                                            <i class="pull-right">
+                                                <i class="fa fa-video-camera"></i>
+                                                <span class="label label-info"></span>
+                                            </i>
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li ng-show="showsafedrops">
+                                    <a href="tutorial/4">
+                                        <h3 class="ng-binding">
+                                            Safe Drops & Mop Sales
+                                            <i class="pull-right">
+                                                <i class="fa fa-video-camera"></i>
+                                                <span class="label label-info"></span>
+                                            </i>
+                                        </h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+ 
+                    </ul>
+                </li>
+
+            </ul>
+
+
+              <ul class="nav navbar-nav pull-right" ng-if="cashierName!=null">
+                  <!-- Control Sidebar Toggle Button -->
+                  <li>
+                      <a href="schedule">Schedule <i class="fa fa-calendar"></i></a>
+                  </li>
+                  <li class="dropdown tasks-menu" ng-if="rackSetsMenu && rackSetsMenu.length!=0" ng-hide="is_basicplan || is_simpleplan" >
+                          <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                              Racks <i class="fa fa-inbox"></i>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li>
+                                  <!-- contains the actual data -->
+                                  <ul class="menu">
+                                      <li ng-repeat="racksetMenu in rackSetsMenu">
+                                          <a ng-href="rackset/{{racksetMenu.id}}">
+                                              <h3 class="ng-binding">
+                                                  {{racksetMenu.title}}
+                                                  <i class="pull-right">
+                                                      <i class="fa fa-server"></i>
+                                                      <span class="label label-info"></span>
+                                                  </i>
+                                              </h3>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </li>
+
+                          </ul>
+                      </li>
+                  <li>
+                      <a href="#"><i class="fa fa-power-off" ng-click="logout()"></i></a>
+                  </li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar" ng-hide="is_simpleplan">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              .
+            </div>
+            <div class="pull-left info">
+              <p>{{cashierName}}</p>
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+ 
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+              <li class="header">SUPPORT</li>
+              <li class="treeview">
+                  <a href="unsafe:javascript:;">
+                      <i class="fa fa-question-circle"></i> <span class="ng-binding">Tutorials</span> 
+                      <i class="fa fa-angle-left pull-right ng-scope" ></i>
+                  </a>
+                   <ul class="treeview-menu">
+                    <li>
+                        <a href="tutorial/1"><i class="fa fa-video-camera"></i>App Summary</a>
+                    </li> 
+                    <li ng-hide="is_simpleplan" >
+                        <a href="tutorial/2"><i class="fa fa-video-camera"></i>Cash Drawers</a>
+                    </li>                     
+                    <li>
+                        <a href="tutorial/3"><i class="fa fa-video-camera"></i>Checklists,review and submit</a>
+                    </li> 
+                    <li ng-hide="is_simpleplan">
+                        <a href="tutorial/4"><i class="fa fa-video-camera"></i>Safe Drops & Mop Sales</a>
+                    </li> 
+                  </ul> 
+              </li>
+
+              <!-- -->
+              <li>
+                  <a href="http://shiftreports.com/support.html" target="_blank">SUPPORT</a>
+              </li>
+              <li>
+                  <a href="http://shiftreports.com/contact-us.html" target="_blank">CONTACT US</a>
+              </li>
+              <li>
+                  <a href="http://shiftreports.com/privacy-policy.html" target="_blank">PRIVACY POLICY</a>
+              </li>
+              <li>
+                  <a href="http://shiftreports.com/terms-of-use.html" target="_blank">TERM OF USE</a>
+              </li>
+           <!-- <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>-->
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- top menu -->
+        <section>
+            <nav class="navbar navbar-bottom-menu ng-cloak" data-spy="affix" data-offset-top="70" style="z-index:1;" id="top-menu" ng-show="showMenu">
+                <!-- Top menu fixed -->
+                <div class="menu-button-container" ng-hide="is_simpleplan">
+                    <div class="items col-xs-4">
+                        <div class="info-block block-info clearfix row">
+                            <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                <a href="cash_open_drawer" class="btn btn-default menuButton" ng-click="deActivateMenuButtons()">
+                                    <div class="bizcontent">
+                                        <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                        <span class="fa fa-inbox" style="font-size:25px;"></span>
+                                        <div class="btnText text-center">Opening Drawer</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-button-container" ng-hide="is_simpleplan">
+                    <div class="items col-xs-4">
+                        <div class="info-block block-info clearfix row">
+                            <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                <a href="cash_close_open" class="btn btn-default menuButton middle" ng-click="deActivateMenuButtons()">
+                                    <div class="bizcontent">
+                                        <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                        <span class="fa fa-hdd-o" style="font-size:25px;"></span>
+                                        <div class="btnText text-center">Closing Drawer</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-button-container" ng-hide="is_simpleplan">
+                    <div class="items col-xs-4">
+                        <div class="info-block block-info clearfix row">
+                            <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                                <a href="safe_drops" class="btn btn-default menuButton" ng-click="deActivateMenuButtons()">
+                                    <div class="bizcontent">
+                                        <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                        <span class="glyphicon glyphicon-piggy-bank" style="font-size:21px;"></span>
+                                        <div class="btnText text-center">Safe Drops</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+
+
+
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="row LoginInformationSection" ng-show="showMenu">
+                <div class="col-sm-4 text-center">
+                    <h4><i class="glyphicon glyphicon-user"></i> {{cashierName}}</h4>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h4><i class="glyphicon glyphicon-calendar"></i> {{deviceDate}}</h4>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h4><i class="glyphicon glyphicon-time"></i> {{shiftTime}}</h4>
+                </div>
+            </div>
+ 
+        </section>
+
+        <!-- Main content -->
+        <section class="container-fluid">
+            <!-- body-section -->
+            <div ng-view autoscroll="true" ></div>
+        </section><!-- /.content -->
+
+      </div><!-- /.content-wrapper -->
+      <section class="bottom-menu" ng-hide="is_simpleplan">
+
+          <nav class="navbar navbar-default navbar-fixed-bottom-menu fixed-menu-footer ng-cloak" id="bottom-menu" style="margin-bottom: -6px;" ng-show="showMenu">
+              <!-- Fixed menu Footer -->
+			  <!--Sale info-->
+              <div class="menu-button-container" ng-hide="is_simpleplan">
+                  <div class="items col-xs-4">
+                      <div class="info-block block-info clearfix row">
+                          <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                              <a href="sales_info" class="btn btn-default menuButton" ng-click="deActivateMenuButtons()">
+                                  <div class="bizcontent">
+                                      <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                      <span class="glyphicon glyphicon-tags" style="font-size:21px;"></span>
+                                      <div class="btnText text-center">Sales Info</div>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+			  <!--Shift Details-->
+              <div class="menu-button-container" >
+                  <div class="items col-xs-4">
+                      <div class="info-block block-info clearfix row">
+                          <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                              <a href="closed_shift_details" class="btn btn-default menuButton middle btn-block" ng-click="deActivateMenuButtons()">
+                                  <div class="bizcontent">
+                                      <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                      <span class="glyphicon glyphicon-tasks" style="font-size:21px;"></span>
+                                      <div class="btnText text-center">Shift Details</div>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+			  <!--Review and Submit-->
+              <div class="menu-button-container" >
+                  <div class="items col-xs-4">
+                      <div class="info-block block-info clearfix row">
+                          <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                              <a href="review_and_submit" class="btn btn-default menuButton btn-block" ng-click="deActivateMenuButtons()">
+                                  <div class="bizcontent">
+                                      <input type="checkbox" name="var_id[]" autocomplete="off" value="">
+                                      <span class="glyphicon glyphicon-send" style="font-size:21px;"></span>
+                                      <div class="btnText text-center">Review & Submit</div>
+                                  </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+
+      </section><!-- bottom-menu -->
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <span style="padding-right:20px;">
+                <a href="http://shiftreports.com/support.html" target="_blank">SUPPORT</a> | 
+                <a href="http://shiftreports.com/contact-us.html" target="_blank">CONTACT US</a> | 
+                <a href="http://shiftreports.com/privacy-policy.html" target="_blank">PRIVACY POLICY</a> | 
+                <a href="http://shiftreports.com/terms-of-use.html" target="_blank">TERM OF USE</a>
+            </span>
+          <b>Version</b> 2.2
+        </div>
+        <strong>&copy;2014-2016 <a href="www.shiftreports.com" target="_blank">ShiftReports.com</a> </strong> All Rights Reserved.
+      </footer>
+    
+     
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+    </div><!-- ./wrapper -->
+
+
+
+      
+
+
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+ 
+ 
+
+     <!--<script src="scripts/vendor/jquery.min.js"></script>-->
+      <script src="scripts/vendor/bootstrap.min.js"></script>
+      <script src="scripts/vendor/jquery.sidr.min.js"></script>
+      <script src="scripts/vendor/moment/moment.js"></script>
+      <script src="scripts/vendor/moment/moment-range.min.js"></script>
+      <script src="scripts/vendor/jquery.alphanum.js"></script>
+      <script>
+          function validateForms() {
+              $("input:text").alphanum({
+                  allow: 'àâäæ@.-',
+                  disallow: '',
+                  allowSpace: true,
+                  allowNumeric: true,
+                  allowUpper: true,
+                  allowLower: true,
+                  allowCaseless: true,
+                  allowLatin: true,
+                  allowOtherCharSets: true,
+                  forceUpper: false,
+                  forceLower: false,
+                  maxLength: NaN
+              });
+
+              $("textarea").alphanum({
+                  allow: 'àâäæ@.-',
+                  disallow: '',
+                  allowSpace: true,
+                  allowNumeric: true,
+                  allowUpper: true,
+                  allowLower: true,
+                  allowCaseless: true,
+                  allowLatin: true,
+                  allowOtherCharSets: true,
+                  forceUpper: false,
+                  forceLower: false,
+                  maxLength: NaN
+              });
+
+          }
+
+      </script>   
+
+      <!-- angularJS includes -->
+      <script src="scripts/vendor/angular/angular.min.js"></script>
+      <script src="scripts/vendor/angular/angular-route.min.js"></script>
+      <script src="scripts/vendor/angular/angular-cookies.js"></script>
+      <script src="scripts/vendor/angular/angular-resource.js"></script>
+
+      <!-- persistence js-->
+      <script src="scripts/vendor/persistence/persistence.js"></script>
+      <script src="scripts/vendor/persistence/persistence.store.sql.js"></script>
+      <script src="scripts/vendor/persistence/persistence.store.websql.js"></script>
+      <script src="scripts/vendor/persistence/persistence.store.memory.js"></script>
+      <script src="scripts/vendor/persistence/gears_init.js"></script>
+
+      <!-- scheduler -->
+      <script src="scripts/vendor/angular-bootstrap-calendar-tpls.js"></script>
+
+
+
+
+      <script src="scripts/app.js"></script>
+      <!-- controllers -->
+      <script src="scripts/controllers/OpenDrawer.js"></script>
+      <script src="scripts/controllers/CloseDrawer.js"></script>
+      <script src="scripts/controllers/SafeDrops.js"></script>
+      <script src="scripts/controllers/SalesInfo.js"></script>
+      <script src="scripts/controllers/ShiftDetails.js"></script>
+      <script src="scripts/controllers/ReviewSubmit.js"></script>
+      <script src="scripts/controllers/LoginSignUp.js"></script>
+      <script src="scripts/controllers/Login.js"></script>
+      <script src="scripts/controllers/ForgotPassword.js"></script>
+      <script src="scripts/controllers/CreateShift.js"></script>
+      <script src="scripts/controllers/tutorial.js"></script>
+      <script src="scripts/controllers/Schedule.js"></script>
+      <script src="scripts/controllers/Racks.js"></script>
+
+
+ 
+
+   
+    <!-- AdminLTE App -->
+    <script src="scripts/vendor/adminLTE.js"></script>
+
+
+      <!-- Google Tag Manager -->
+      <noscript>
+          <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KTT86X"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KTT86X');
+      </script>
+      <!-- End Google Tag Manager -->
+ 
+
+      <!--Start of Tawk.to Script-->
+      <!--
+      <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/56c3c45d8d4a470c0c0001f1/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+      </script>
+          -->
+      <!--End of Tawk.to Script-->
+  
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<div class="box">
+
+    <div class="review-submit-section"> <!-- opening drawer -->
+        <div class="row calculateSection">
+
+            <div class="col-sm-5">
+                <span class="title"><strong>OPENING CASH DRAWER</strong></span>
+                <span class="totalCash"><strong>{{ openingCashDrawerTotal | currency}}</strong></span>
+            </div>
+           
+        </div>
+        <hr />
+
+      
+
+        <div class="row billsSection">
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">OPENING BILLS</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Fifties</td><td>{{shift.OC_B_Fifties}}</td></tr>
+                <tr><td>Twenties</td><td>{{shift.OC_B_Twenties}}</td></tr>
+                <tr><td>Tens</td><td>{{shift.OC_B_Tens}}</td></tr>
+                <tr><td>Fives</td><td>{{shift.OC_B_Fives}}</td></tr>
+                <tr><td>Singles</td><td>{{shift.OC_B_Singles}}</td></tr>
+
+            </table>
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">OPENING LOOSE COINS</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Dollars</td><td>{{shift.OC_L_Dollars }}</td></tr>
+                <tr><td>Quarters</td><td>{{shift.OC_L_Quarters}}</td></tr>
+                <tr><td>Dimes</td><td>{{shift.OC_L_Dimes}}</td></tr>
+                <tr><td>Nickels</td><td>{{shift.OC_L_Nickels}}</td></tr>
+                <tr><td>Pennies</td><td>{{shift.OC_L_Pennies}}</td></tr>
+
+            </table>
+
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">OPENING ROLLED COINS</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Quarters</td><td>{{shift.OC_R_Quarters}}</td></tr>
+                <tr><td>Dimes</td><td>{{shift.OC_R_Dimes}}</td></tr>
+                <tr><td>Nickels</td><td>{{shift.OC_R_Nickels}}</td></tr>
+                <tr><td>Pennies</td><td>{{shift.OC_R_Pennies}}</td></tr>
+            </table>
+
+
+
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="review-submit-section">  <!-- Closing drawer -->
+        <div class="row calculateSection">
+
+            <div class="col-sm-5">
+                <span class="title"><strong>CLOSING CASH DRAWER</strong></span>
+                <span class="totalCash"><strong>{{ closingCashDrawerTotal | currency}}</strong></span>
+            </div>
+
+
+        </div>
+
+        <hr />
+
+        <div class="row billsSection">
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">CLOSING BILLS</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Fifties</td><td>{{shift.CC_B_Fifties}}</td></tr>
+                <tr><td>Twenties</td><td>{{shift.CC_B_Twenties}}</td></tr>
+                <tr><td>Tens</td><td>{{shift.CC_B_Tens}}</td></tr>
+                <tr><td>Fives</td><td>{{shift.CC_B_Fives}}</td></tr>
+                <tr><td>Singles</td><td>{{shift.CC_B_Singles}}</td></tr>
+
+            </table>
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">CLOSING LOOSE COINS</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Dollars</td><td>{{shift.CC_L_Dollars }}</td></tr>
+                <tr><td>Quarters</td><td>{{shift.CC_L_Quarters}}</td></tr>
+                <tr><td>Dimes</td><td>{{shift.CC_L_Dimes}}</td></tr>
+                <tr><td>Nickels</td><td>{{shift.CC_L_Nickels}}</td></tr>
+                <tr><td>Pennies</td><td>{{shift.CC_L_Pennies}}</td></tr>
+
+            </table>
+
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">CLOSING ROLLED COINS</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Quarters</td><td>{{shift.CC_R_Quarters}}</td></tr>
+                <tr><td>Dimes</td><td>{{shift.CC_R_Dimes}}</td></tr>
+                <tr><td>Nickels</td><td>{{shift.CC_R_Nickels}}</td></tr>
+                <tr><td>Pennies</td><td>{{shift.CC_R_Pennies}}</td></tr>
+            </table>
+
+
+
+        </div>
+
+    </div>
+
+        <hr />
+
+    <div class="review-submit-section"> <!-- MOP sales -->
+        <div class="row calculateSection">
+
+            <div class="col-sm-5">
+                <span class="title"><strong>MOP SALES</strong></span>
+            </div>
+
+
+        </div>
+
+        <hr />
+
+        <div class="row billsSection">
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">REGISTER 1</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Credit</td><td>{{shift.MS_R1_Credit}}</td></tr>
+                <tr><td>Debit</td><td>{{shift.MS_R1_Debit}}</td></tr>
+                <tr><td>Cash Dollars</td><td>{{shift.MS_R1_Cash}}</td></tr>
+
+            </table>
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">REGISTER 2</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Credit</td><td>{{shift.MS_R2_Credit}}</td></tr>
+                <tr><td>Debit</td><td>{{shift.MS_R2_Debit}}</td></tr>
+                <tr><td>Cash Dollars</td><td>{{shift.MS_R2_Cash}}</td></tr>
+
+            </table>
+
+
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%">ALL REGISTERS</th>
+                <th></th>
+                </thead>
+
+                <tr><td>Credit</td><td>{{shift.MS_R3_Credit}}</td></tr>
+                <tr><td>Debit</td><td>{{shift.MS_R3_Debit}}</td></tr>
+                <tr><td>Cash Dollars</td><td>{{shift.MS_R3_Cash}}</td></tr>
+
+            </table>
+
+
+
+        </div>
+
+    </div>
+
+
+        <hr />
+
+    <div class="review-submit-section"> <!-- safe drops -->
+        <div class="row calculateSection">
+            <!-- safe drops -->
+
+            <div class="col-sm-5">
+                <span class="title"><strong>SAFE DROPS</strong></span>
+                <span class="totalCash"><strong>{{ safeDropstotal | currency}}</strong></span>
+            </div>
+
+
+        </div>
+
+        <br />
+
+        <div class="row billsSection">
+
+            <table class="table table-striped">
+                <thead>
+                <th width="50%"></th>
+                <th></th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="oneSafeDrop in shift.SD_SafeDrops">
+                        <td>Safe Drop # {{oneSafeDrop._id}}</td>
+                        <td>{{oneSafeDrop.value |currency}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+        </div>
+
+    </div>
+        <div>
+            <!-- submit button -->
+
+            <button type="button" class="btn btn-primary btn-sm center-block" style="width:250px;margin-top:50px;" ng-click="submit()">
+                <span class="glyphicon glyphicon-ok pull-left"></span>
+                <strong> Approve and Submit Shift Report</strong>
+            </button>
+
+        </div>
+
+        <div>{{stringJson}}</div>
+
+    </div><!-- box -->
+
+
+
+<div class="modal modal-danger" id="errorSubmitModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Error</h4>
+            </div>
+            <div class="modal-body">
+                <p>Your shift report was not submitted due to an error. Please contact our Customer Support team at 888.670.4190, support@shiftreports.com, visit our website: www.shiftreports.com to chat with us, or contact your manager for assistance.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-right" data-dismiss="modal">Ok</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

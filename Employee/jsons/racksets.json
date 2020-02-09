@@ -1,0 +1,256 @@
+{
+  "store_racks": [
+    {
+      "id": 1,
+      "title": "Food",
+      "header": {
+        "Sections": [
+          {
+            "Title": "Section 1",
+            "elemnts": [
+              {
+                "id": "1",
+                "title": "element 1",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "2",
+                "title": "element 2",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "3",
+                "title": "element 3",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "4",
+                "title": "element 4",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "5",
+                "title": "element 5",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+
+            ]
+          },
+          {
+            "Title": "Section 2",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "Element 1",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "Sections": [
+          {
+            "Title": "The title of the section",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "the title of the elem",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+            ]
+          }
+        ]
+      },
+      "rack": [
+        {
+          "rack_name": "rack1",
+          "rack_no": "1",
+          "rack_rows": 4,
+          "rack_col": 20,
+          "show_started": true,
+          "show_added": true,
+          "show_ended": true
+        },
+        {
+          "rack_name": "rack2",
+          "rack_no": "2",
+          "rack_rows": 4,
+          "rack_col": 8,
+          "show_started": true,
+          "show_added": true,
+          "show_ended": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chips",
+      "header": {
+        "Sections": [
+          {
+            "Title": "The title of the section 1",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 1",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 2",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 3",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 4",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 5",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+
+            ]
+          },
+          {
+            "Title": "The title of the section 2",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "Element 1",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "Sections": [
+          {
+            "Title": "The title of the section",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "the title of the elem",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+            ]
+          }
+        ]
+      },
+      "rack": [
+        {
+          "rack_name": "rack1",
+          "rack_no": "The rack no",
+          "rack_rows": 4,
+          "rack_col": 20,
+          "show_started": true,
+          "show_added": true,
+          "show_ended": true
+        }
+      ]
+    },
+     {
+      "id": 3,
+      "title": "Coke",
+      "header": {
+        "Sections": [
+          {
+            "Title": "The title of the section 1",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 1",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 2",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 3",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 4",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              },
+              {
+                "id": "the id of the lem in the table",
+                "title": "element 5",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+
+            ]
+          },
+          {
+            "Title": "The title of the section 2",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "Element 1",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "Sections": [
+          {
+            "Title": "The title of the section",
+            "elemnts": [
+              {
+                "id": "the id of the lem in the table",
+                "title": "the title of the elem",
+                "def": "",
+                "uuid": "the uuid of the elemnt"
+              }
+            ]
+          }
+        ]
+      },
+      "rack": [
+        {
+          "rack_name": "rack1",
+          "rack_no": "The rack no",
+          "rack_rows": 4,
+          "rack_col": 20,
+          "show_started": true,
+          "show_added": true,
+          "show_ended": true
+        }
+      ]
+    }
+  ]
+    }

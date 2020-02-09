@@ -1,0 +1,213 @@
+
+        <div class="box">
+
+            <div class="row calculateSection">
+
+
+                <div class="col-sm-12">
+                    <span class="title"><strong>OPENING CASH DRAWER</strong></span>
+                    <span class="totalCash"><strong>{{total | currency}}</strong></span>
+                </div>
+ 
+            </div>
+
+            <br /><br />
+
+            <div class="row billsSection">
+
+                <div class="col-sm-4 text-center">
+                    <!--Bills-->
+                    <table class="table borderless">
+                        <thead style="border-bottom:solid;border-width:1px;">
+                            <tr>
+                                <ht><strong>OPENING BILLS</strong></ht>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Fifties</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="0" ng-model="shift.OC_B_Fifties" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Twenties</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_B_Twenties" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Tens</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_B_Tens" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Fives</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_B_Fives" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Singles</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_B_Singles" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="col-sm-4 text-center">
+                    <!--Loose coins-->
+                    <table class="table borderless">
+                        <thead style="border-bottom:solid;border-width:1px;">
+                            <tr>
+                                <ht><strong>LOOSE COINS</strong></ht>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Dollars</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_L_Dollars" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Quarters</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_L_Quarters" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Dimes</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_L_Dimes" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Nickels</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_L_Nickels" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Pennies</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_L_Pennies" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <!--ROLLED COINS-->
+                    <table class="table borderless">
+                        <thead style="border-bottom:solid;border-width:1px;">
+                            <tr>
+                                <ht><strong>ROLLED COINS</strong></ht>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Quarters</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_R_Quarters" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Dimes</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_R_Dimes" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Nickels</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_R_Nickels" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Pennies</label>
+                                    <div class="col-sm-8">
+                                        <input type="number" min="0" class="form-control" placeholder="#" ng-model="shift.OC_R_Pennies" ng-change="updateField()">
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+ 

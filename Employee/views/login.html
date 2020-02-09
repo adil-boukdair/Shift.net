@@ -1,0 +1,88 @@
+<div class="login-box">
+    <div class="login-logo">
+        <a href="www.shiftreports.com" target="_blank"><b>Shift Reports</b></a>
+    </div><!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+
+        <div class="form-group">
+            <div ng-if="errorMessage" class="text-danger text-center">{{ errorMessage }}</div>
+        </div>
+       
+            <div class="form-group has-feedback">
+                <input type="number" class="form-control" placeholder="Employee User ID" ng-model="username">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" class="form-control" placeholder="Password" ng-model="password">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">
+ 
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-warning btn-block btn-flat" ng-click="logIn()">Login</button>
+                </div><!-- /.col -->
+            </div>
+      
+ <br />
+        <button class="btn btn-link" ng-click="forgotPassword()">I forgot my password</button><br>
+    </div><!-- /.login-box-body -->
+</div><!-- /.login-box -->
+ 
+
+
+<div class="modal modal-success" id="successSubmitModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Information</h4>
+            </div>
+            <div class="modal-body">
+                <p>Thank You for submitting your shift report today. You have successfully submitted the report. If you have any concerns regarding your shift please consult with your Manager.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-right" data-dismiss="modal">Ok</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal modal-success" id="successPasswordModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Information</h4>
+            </div>
+            <div class="modal-body">
+                <p>Your password has been successfully sent to your email.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-right" data-dismiss="modal">Ok</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- login error modal for payment_status-->
+<div class="modal modal-danger" id="paymentStatusModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                <h4 class="modal-title">Alert</h4>
+            </div>
+            <div class="modal-body">
+                <p>{{paymentStatusModalMessage}}</p>
+            </div>
+            <div class="modal-footer">
+                <a href="http://www.shiftreports.com" class="btn btn-danger pull-right">Ok</a>
+                <a href="http://www.shiftreports.com/contact-us.html" class="btn btn-danger pull-left">Chat with Us</a>
+
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

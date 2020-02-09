@@ -1,0 +1,140 @@
+﻿<!-- Content Header (Page header) -->
+ <style>
+@media screen and (orientation:portrait) {
+
+        #scheduler{
+        display:none;
+    }
+}
+
+@media screen and (orientation:landscape) {
+        #landscape{
+        display:none;
+    }
+
+}
+
+ </style>
+
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Schedule</h3>
+                <div class="box-tools pull-right">
+                    <button class="btn btn-primary btn-flat" ng-click="goBackToTheApp()">Back to the app</button>
+                </div>
+            </div>
+            <br />
+            <div class="callout callout-danger" id="landscape">
+                <h4>Alert!</h4>
+                <p>This page can only be displayed in landscape mode, please change the orientation of your device.</p>
+            </div>
+
+            <div class="box-body" id="scheduler">
+              
+                <section class="row topMenu" >
+
+                    <div class="col-sm-4 stores" >
+                      <h4>{{cashierName}}</h4>                    
+                    </div>
+
+                    <div class="col-sm-4 date" style="margin-top: -5px;"><h4 class="text-center">{{scheduler.viewDate | formatdate:"MMMM YYYY"}}</h4></div>
+                    
+                    <div class="col-sm-4 navigation text-center">
+                        <div class="btn-group" ng-click="previewsWeek()">
+                            <button class="btn btn-primary btn-sm "
+                                    mwl-date-modifier
+                                    date="scheduler.viewDate"
+                                    decrement="scheduler.calendarView">
+                                <i class="fa fa-chevron-left"></i>
+                            </button>
+
+                            <button class="btn btn-default btn-sm"
+                                    mwl-date-modifier
+                                    date="scheduler.viewDate"
+                                    set-to-today>
+                                This week
+                            </button>
+
+                            <button class="btn btn-primary btn-sm" ng-click="nextWeek()"
+                                    mwl-date-modifier
+                                    date="scheduler.viewDate"
+                                    increment="scheduler.calendarView">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            
+            <hr />
+
+                <div class="row calendar-container" style="margin-left:5px;margin-right:5px;">
+                    <mwl-calendar view="scheduler.calendarView"
+                                  view-date="scheduler.viewDate"
+                                  events="events"
+                                  on-event-click="cellClicked(calendarEvent)"
+                                  on-event-times-changed="calendarEvent.startsAt = calendarNewEventStart; calendarEvent.endsAt = calendarNewEventEnd"
+                                  on-edit-event-click=""
+                                  on-delete-event-click=""
+                                  cell-is-open="true">
+                    </mwl-calendar>
+
+                </div>
+
+
+            </div><!-- /.box-body -->
+ 
+        </div><!-- /.box -->
+     
+
+    </section><!-- /.content -->
+
+
+
+ 
+
+<!-- Modify event modal-->
+<div class="modal" id="modifyEvent">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><strong>Shift {{modal.shift.shift_no}} </strong>:  {{modal.shift.start_time}} - {{modal.shift.end_time}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Respond or Change Your Status</label>
+                    <select class="form-control" ng-model="modal.status">
+                        <option value="1">Accept Shift</option>
+                        <option value="-1">Decline Shift</option>
+                    </select>
+                </div>
+
+                <div ng-if="modal.status==-1" class="form-group">
+
+                    <div class="radio" ng-repeat="reason in reasons">
+                        <label>
+                            <input type="radio" ng-model="modal.reason_id" value="{{reason.id}}">
+                            {{reason.text}}
+                        </label>
+                    </div>
+ 
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-flat pull-left" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning btn-flat pull-right" data-dismiss="modal" ng-click="modal.modifyAssignedShift()">Modify your Status</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+ 
